@@ -1,0 +1,59 @@
+/* ========================================================================
+   GLOBAL STYLES
+======================================================================== */
+
+/* Color Palette */
+/* 	palette-link */
+
+/* Variables */
+:root {
+    --main-color: color;
+    --main-font: font;
+}
+
+/* Box model fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Font size */
+html {
+    font-size: font-size;
+}
+@media screen and (min-width: break-point) {
+    html {
+        font-size: font-size;
+    }
+}
+@media screen and (min-width: break-point) {
+    html {
+        font-size: font-size;
+    }
+}
+
+/* Scroll behavior */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Body */
+body {
+    font-family: var(--main-font);
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto
+}
+
+/* ========================================================================
+   COMPONENTS
+======================================================================== */
+
+/* Component name */
