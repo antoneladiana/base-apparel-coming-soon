@@ -2,31 +2,75 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <!-- Title -->
+  <link rel="icon" type="image/png" sizes="32x32" 
+        href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel Coming Soon</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- JavaScript -->
+  <script src="./javascript/script.js" defer></script>
 </head>
 <body>
 
-  We're coming soon
+  <header class="header">
+    <svg class="header__logo" viewBox="0 0 158 33">
+      <use xlink:href="./images/svg-sprite.svg#logo"/>
+    </svg>
+  </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <main class="main">
+    <img class="illustration --mobile" 
+         src="./images/hero-mobile.jpg" width="375" height="250"
+    alt="Young woman wearing orange shirt.">
+    <img class="illustration --desktop" 
+         src="./images/hero-desktop.jpg" width="610" height="800"
+         alt="Young woman wearing orange shirt.">
 
-  Email Address
-  
-  <footer>
+    <div class="content">
+      <h1 class="content__title">
+        We're <strong class="content__strong">coming soon</strong>
+      </h1>
+      <p class="content__description">
+        Hello fellow shoppers! We're currently building our new fashion 
+        store. Add your email below to stay up-to-date with announcements and 
+        our launch deals.
+      </p>
+      <form class="form">
+        <input class="form__input" type="text" placeholder="Email Address">
+        <svg class="error__icon --hidden" viewBox="0 0 12 20">
+          <use xlink:href="./images/svg-sprite.svg#icon-error"/>
+        </svg>
+        <button class="form__button" type="button">
+          <svg class="form__icon" viewBox="0 0 12 20">
+            <use xlink:href="./images/svg-sprite.svg#icon-arrow"/>
+          </svg>
+        </button>
+      </form>
+      <span class="error__message --hidden">
+        Please provide a valid email
+      </span>
+    </div>
+  </main>
+
+  <footer class="footer">
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by 
+      <a class="attribution__link"
+         href="https://www.frontendmentor.io?ref=challenge" 
+         target="_blank">Frontend Mentor</a>. Coded by 
+         <a class="attribution__link" 
+            href="https://antoneladiana.github.io/">
+          Antonela Diana</a>.
     </p>
   </footer>
 </body>
